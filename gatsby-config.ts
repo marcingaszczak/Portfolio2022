@@ -5,7 +5,10 @@ const config: GatsbyConfig = {
     title: `Portfolio`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+  ]
 };
 
 export default config;

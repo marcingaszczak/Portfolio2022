@@ -1,0 +1,80 @@
+.Header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: $black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  justify-content: end;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__Ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    max-height: 100px;
+    transition: all 1s;
+    overflow: hidden;
+    @media (min-width: 701px) {
+      flex-direction: row;
+      margin: 15px 40px 15px 15px;
+    }
+    @media (max-width: 700px) {
+      max-height: 0;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      &--active {
+        display: flex;
+
+        margin-top: 0;
+        transition: all 1s linear;
+        max-height: 300px;
+      }
+    }
+  }
+
+  &__Li {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 5px;
+    width: 100px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    $Li: &;
+    &:hover {
+      background-color: white;
+      color: $black;
+      #{$Li}__Text {
+        color: $black;
+      }
+    }
+    &__Text {
+      color: $white;
+      text-decoration: none;
+      padding: 5px 0 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__Hamburger {
+    display: none;
+    font-size: 1.6em;
+    padding: 20px;
+    cursor: pointer;
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+}
