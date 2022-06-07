@@ -1,8 +1,9 @@
 import React from "react";
-import { Pages } from "../data/pages";
+import { PageCopy, Pages } from "../data/pages";
 import Footer from "./Footer/Footer";
 import Nav from "./Nav/Nav";
 import "./../styles/Main.scss";
+import SEO from "./SEO";
 
 const Layout: React.FC<{ currentPage: Pages }> = ({
   children,
@@ -10,6 +11,7 @@ const Layout: React.FC<{ currentPage: Pages }> = ({
 }) => {
   return (
     <>
+      <SEO title={PageCopy[currentPage].title} />
       <Nav currentPage={currentPage} />
       <main>{children}</main>
       <Footer />

@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://marcingaszczak.com/`
   },
   plugins: [
     "gatsby-plugin-sass",
