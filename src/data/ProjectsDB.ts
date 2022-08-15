@@ -10,7 +10,7 @@ export const myProjects = [
         hoverText: 'Material UI, Redux, Router, Firebase',
         styleModifier: '',
         image: SpaceNews,
-        address: 'https://marcingaszczak.com/SpaceNews/index.html'
+        address: 'https://marcingaszczak.pl/SpaceNews/index.html'
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ export const myProjects = [
         hoverText: 'useReducer, useState, useContext, forwardRefs, SCSS',
         styleModifier: '',
         image: FoodOrder,
-        address: 'https://marcingaszczak.com/FoodOrder/index.html'
+        address: 'https://marcingaszczak.pl/FoodOrder/index.html'
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const myProjects = [
         hoverText: 'useEffect, useState, fetch, CSS',
         styleModifier: '',
         image: NetflixClone,
-        address: 'https://marcingaszczak.com/NetflixClone/index.html'
+        address: 'https://marcingaszczak.pl/NetflixClone/index.html'
     },
     {
         id: 2,
@@ -34,6 +34,6 @@ export const myProjects = [
         hoverText: 'That`s how it all started',
         styleModifier: '',
         image: Spacex,
-        address: 'https://marcingaszczak.com/SpacexPolska/index.html'
+        address: 'https://marcingaszczak.pl/SpacexPolska/index.html'
     },
 ]
